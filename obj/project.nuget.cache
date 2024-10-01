@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q3p7eYyNUMh3P6eAPmyfeBg2kJMKmW/PH63vpwLATbmayeg4frH5Iur53HZSiqKqcQoatZoETE0bYnfOubGwzw==",
+  "success": true,
+  "projectFilePath": "/home/ruzen42/Programing/CSharp/SHA256Generator/SHA256Generator.csproj",
+  "expectedPackageFiles": [
+    "/home/ruzen42/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/gdksharp/3.24.24.95/gdksharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512"
+  ],
+  "logs": []
+}
