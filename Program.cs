@@ -1,6 +1,7 @@
 ﻿using Gtk;
 using System.Security.Cryptography;
 using System.Text;
+using SHA3.Net;
 
 class ShaWindowApp : Window
 {
@@ -17,6 +18,8 @@ class ShaWindowApp : Window
     private MenuItem sha1Item = new MenuItem("SHA-1");
     private MenuItem sha256Item = new MenuItem("SHA-256");
     private MenuItem sha512Item = new MenuItem("SHA512");
+    private MenuItem sha3256Item = new MenuItem("SHA3-256");
+    private MenuItem sha3512Item = new MenuItem("SHA3-512");
 
     private static string? selectedAlgorithm = "SHA256";
 
@@ -33,10 +36,14 @@ class ShaWindowApp : Window
         shamenu.Append(sha1Item);
         shamenu.Append(sha256Item);
         shamenu.Append(sha512Item);
+        shamenu.Append(sha3256Item);
+        shamenu.Append(sha3512Item);
 
         sha1Item.Activated += (sender, e) => { selectedAlgorithm = "SHA1"; };
         sha256Item.Activated += (sender, e) => { selectedAlgorithm = "SHA256"; };
         sha512Item.Activated += (sender, e) => { selectedAlgorithm = "SHA512"; };
+        sha3256Item.Activated += (sender, e) => { selectedAlgorithm = "SHA3-256"; };
+        sha3512Item.Activated += (sender, e) => { selectedAlgorithm = "SHA3-512"; };
 
         shaItem.Submenu = shamenu;
 
@@ -115,6 +122,38 @@ class ShaWindowApp : Window
                 for (int i = 0; i < hash.Length; i++)
                 {
                     builder.Append(hash[i].ToString("x2"));
+                }
+
+                return builder.ToString();
+            }
+        }
+        else if (selectedAlgorithm == "SHA3-256")
+        {
+            using (SHA3_256 sha384hash = SHA3_256.Create())
+            {
+                var hash = sha384hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+                StringBuilder builder = new StringBuilder();
+
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    builder.Append(hash[i].ToString("x2"));
+                }
+
+                return builder.ToString();
+            }
+        }
+        else if (selectedAlgorithm == "SHA3-512")
+        {
+            using (SHA3_512 sha3512hash = SHA3_512.Create())
+            {
+                var hash = sha3512hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+                StringBuilder builder = new StringBuilder();
+
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    builder.Append(hash[i].ToString());
                 }
 
                 return builder.ToString();

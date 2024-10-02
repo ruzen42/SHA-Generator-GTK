@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9WCic6cGTRRQQAgkkpDY3WPrleFQ8lG7lwqI9Qdsi2JHfqG8QY3vKQxOCAbEEDu08bLAM7ieH3MGAqAtJNoddw==",
+  "dgSpecHash": "rZa17kfaOD6R5u4xIVipt9jfbslfKgHOBCb6dAhIJbvZkppAuMqrfg7W3hBAs5nONy+DCIkhdZIa7jcG9ZXShA==",
   "success": true,
   "projectFilePath": "/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/SHA256Generator.csproj",
   "expectedPackageFiles": [
@@ -12,9 +12,10 @@
     "/home/ruzen42/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/microsoft.net.illink.tasks/8.0.8/microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.8/microsoft.netcore.app.runtime.linux-x64.8.0.8.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/sha3.net/2.0.0/sha3.net.2.0.0.nupkg.sha512",
     "/home/ruzen42/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.8/microsoft.aspnetcore.app.runtime.linux-x64.8.0.8.nupkg.sha512",
-    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.8/microsoft.netcore.app.host.linux-x64.8.0.8.nupkg.sha512"
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.8/microsoft.netcore.app.host.linux-x64.8.0.8.nupkg.sha512",
+    "/home/ruzen42/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.8/microsoft.netcore.app.runtime.linux-x64.8.0.8.nupkg.sha512"
   ],
   "logs": []
 }

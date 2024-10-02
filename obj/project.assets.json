@@ -97,6 +97,15 @@
         "runtime": {
           "lib/net6.0/PangoSharp.dll": {}
         }
+      },
+      "SHA3.Net/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SHA3.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SHA3.Net.dll": {}
+        }
       }
     },
     "net8.0/linux-x64": {
@@ -194,6 +203,15 @@
         },
         "runtime": {
           "lib/net6.0/PangoSharp.dll": {}
+        }
+      },
+      "SHA3.Net/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SHA3.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SHA3.Net.dll": {}
         }
       }
     }
@@ -341,12 +359,31 @@
         "pangosharp.3.24.24.95.nupkg.sha512",
         "pangosharp.nuspec"
       ]
+    },
+    "SHA3.Net/2.0.0": {
+      "sha512": "ryLRgwVNnWLNW8fkl1qfr13eBkNhiRl2dPIksfEgcQghxrOt21PAEBxg/ofwW2l0FKanYpWT9WzD27O3PGHqpw==",
+      "type": "package",
+      "path": "sha3.net/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net5.0/SHA3.Net.dll",
+        "lib/net6.0/SHA3.Net.dll",
+        "lib/netstandard2.0/SHA3.Net.dll",
+        "lib/netstandard2.1/SHA3.Net.dll",
+        "license/BouncyCastle.LICENSE",
+        "license/license.txt",
+        "sha3.net.2.0.0.nupkg.sha512",
+        "sha3.net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "GtkSharp >= 3.24.24.95",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.8"
+      "Microsoft.NET.ILLink.Tasks >= 8.0.8",
+      "SHA3.Net >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -395,6 +432,10 @@
             "target": "Package",
             "version": "[8.0.8, )",
             "autoReferenced": true
+          },
+          "SHA3.Net": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

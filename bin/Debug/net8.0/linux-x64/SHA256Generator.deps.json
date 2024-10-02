@@ -11,6 +11,7 @@
         "dependencies": {
           "GtkSharp": "3.24.24.95",
           "Microsoft.NET.ILLink.Tasks": "8.0.8",
+          "SHA3.Net": "2.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.linux-x64": "8.0.8"
         },
         "runtime": {
@@ -817,6 +818,14 @@
             "fileVersion": "3.24.24.95"
           }
         }
+      },
+      "SHA3.Net/2.0.0": {
+        "runtime": {
+          "lib/net6.0/SHA3.Net.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
       }
     }
   },
@@ -886,6 +895,13 @@
       "sha512": "sha512-H7JeyEvLsgvsbamGpRgoNtdvzPiGwwsUuoeTobN1C/JRjw1J8Snw0yf2WBr7CKx5GLwbrwpQYOb7N/HD17ME8A==",
       "path": "pangosharp/3.24.24.95",
       "hashPath": "pangosharp.3.24.24.95.nupkg.sha512"
+    },
+    "SHA3.Net/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ryLRgwVNnWLNW8fkl1qfr13eBkNhiRl2dPIksfEgcQghxrOt21PAEBxg/ofwW2l0FKanYpWT9WzD27O3PGHqpw==",
+      "path": "sha3.net/2.0.0",
+      "hashPath": "sha3.net.2.0.0.nupkg.sha512"
     }
   },
   "runtimes": {

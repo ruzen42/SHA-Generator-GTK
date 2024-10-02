@@ -1,0 +1,2 @@
+/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/win-release/SHA256Generator.pdb
+/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/win-release/SHA256Generator.exe
