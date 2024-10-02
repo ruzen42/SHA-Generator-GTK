@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ruzen42/Programing/CSharp/SHA256Generator/SHA256Generator.csproj": {}
+    "/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/SHA256Generator.csproj": {}
   },
   "projects": {
-    "/home/ruzen42/Programing/CSharp/SHA256Generator/SHA256Generator.csproj": {
+    "/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/SHA256Generator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ruzen42/Programing/CSharp/SHA256Generator/SHA256Generator.csproj",
+        "projectUniqueName": "/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/SHA256Generator.csproj",
         "projectName": "SHA256Generator",
-        "projectPath": "/home/ruzen42/Programing/CSharp/SHA256Generator/SHA256Generator.csproj",
+        "projectPath": "/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/SHA256Generator.csproj",
         "packagesPath": "/home/ruzen42/.nuget/packages/",
-        "outputPath": "/home/ruzen42/Programing/CSharp/SHA256Generator/obj/",
+        "outputPath": "/home/ruzen42/Programing/CSharp/SHA-Generator-GTK/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ruzen42/.nuget/NuGet/NuGet.Config"
@@ -41,6 +41,12 @@
             "GtkSharp": {
               "target": "Package",
               "version": "[3.24.24.95, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -54,12 +60,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+              "version": "[8.0.8, 8.0.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.8, 8.0.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.linux-x64",
+              "version": "[8.0.8, 8.0.8]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }
